@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body> 
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Kami</h2>
+    <p>Ini adalah halaman beranda.</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <table class="table">
+        <thead>
+          <tr align="center">
+            <th scope="col">FOTO</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+                    <td rowspan="100" align="center"><img src="Rumakamar..jpg" width="350" height="500"></td>
+                    <td>NAMA</td>
+                    <td>: ARDIANSYAH RAMLI</td>
+                  </tr>
+                  <tr>
+                    <td>NIM</td>
+                    <td>: 163 23 079</td>
+                  </tr>
+                  <tr>
+                    <td>JURUSAN</td>
+                    <td>: DIII MANAJEMEN INFORMATIKA</td>
+                  </tr>
+                  <tr>
+                    <td>KELAS</td>
+                    <td>: 1C</td>
+                  </tr>
+                  <tr>
+                    <td>KAMPUS</td>
+                    <td>: POLITEKNIK NEGERI FAKFAK</td>
+                  </tr>
+                  <tr>
+                    <td>ASAL SEKOLAH</td>
+                    <td>: MAN 4 MALUKU TENGAH</td>
+                  </tr>
+                  <tr>
+                    <td>JENIS KELAMIN</td>
+                    <td>: LAKI-LAKI</td>
+                  </tr>
+                  <tr>
+                    <td>TEMPAT/TANGGAL LAHIR</td>
+                    <td>: BANDA 07 N0VEMBER 2005</td>
+                  </tr>
+                  <tr>
+                    <td>TINGGI BADAN/BERAT BADAN</td>
+                    <td>: 163 CM/49 KG</td>
+                  </tr>
+                  <tr>
+                    <td>ALAMAT</td>
+                    <td>:JL.KAPTEN NAPITUPULU</td>
+                  </tr>
+                  <tr>
+                    <td>STATUS</td>
+                    <td>: MAHASISWA</td>
+                  </tr>
+                  <tr>
+                    <td>NO HP</td>
+                    <td>: 082290197517</td>
+                  </tr>
+                  <tr>
+                    <td>GMAIL</td>
+                    <td>: ardiansyaramli@gmail.com</td>
+                  </tr>
+        </tbody>
+      </table>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="Audio WhatsApp 2024-07-26 pukul 22.30.19_2a3470d3.mp3"></audio>
+    <video controls autoplay src="video.1.mp4" width="700" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang saya</h2>
+    <p>assalamualaikum warahmatullahi taa'la wabarakutuh, perkenalkan nama saya Arwan Rumakamar  </p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, natus ex! Minus ex dolores nisi consequuntur tempore perspiciatis libero ea ipsa vitae soluta? Unde sint laboriosam quisquam dolorem corrupti voluptatem?.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Baginda Rumakamar</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
